@@ -5,7 +5,7 @@ const Card = (props)=>{
         return (
         <section className="section-card">
             <div className="text-container">
-                <h3>{props.imageUrltitle}</h3>
+                <h3>{props.title}</h3>
                 <p className="text-card">{props.description}</p>
             </div>
             <div className="image-container">

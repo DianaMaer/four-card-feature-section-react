@@ -33,12 +33,10 @@ class CardList extends Component {
         <div className="card-list-container">
             {data.map((item, index) => index === 0 ? <Card {...item}/> : null )}
             <div className="stackCardsClass">
-                
                 {data.map((item, index)  => index === 1 || index === 2 
                 ? <Card  {...item}/> 
                 : null)
                 }  
-        
             </div>
             {data.map((item, index) => index === 3 ? <Card {...item}/> : null )}
         </div>
