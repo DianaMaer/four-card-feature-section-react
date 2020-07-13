@@ -49,7 +49,7 @@ h2{
    flex-direction: column;
    justify-content: space-between;
    height: 300px;
-   width: 100%;
+   /*width: 100%;*/
    background-color: #fff;
    margin: 15px;
    padding: 40px 35px;
@@ -92,8 +92,9 @@ h2{
 .card-list-container{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-content: center;
+  margin-top: 0 auto;
 
 }
   /* End Style CardList*/
@@ -103,6 +104,7 @@ h2{
     flex-direction: column;
     width: 30%;
   }
+
   .singleCard{
     width: 30%;
     align-self: center;
@@ -112,11 +114,18 @@ h2{
   @media (max-width: 900px){
      /* Style Card*/
     .section-card{
-      width: 60%;
+      width: 100%;
+      margin: 15px 0;
     }
 
     .card-list-container{
       flex-direction: column;
+      align-items: center;
+      
+    }
+    .singleCard, .stackCardsClass{
+      width: 60%;
+      
     }
   }
 
