@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Card from '../components/Card';
 
 const data = [
@@ -24,12 +24,28 @@ const data = [
     }
 
 ]
-const CardList = () => (
-    <div>
-        {data.map(item  => (
-            <Card {...item} />
-        ))};
-    </div>
-);
+
+
+class CardList extends Component {
+    render(){
+
+        return(
+        <div className="card-list-container">
+            {data.map((item, index) => index === 0 ? <Card {...item}/> : null )}
+            <div className="stackCardsClass">
+                
+                {data.map((item, index)  => index === 1 || index === 2 
+                ? <Card  {...item}/> 
+                : null)
+                }  
+        
+            </div>
+            {data.map((item, index) => index === 3 ? <Card {...item}/> : null )}
+        </div>
+        )
+
+    }
+
+}
 
 export default CardList;

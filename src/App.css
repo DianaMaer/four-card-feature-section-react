@@ -8,6 +8,7 @@
   padding: 0;
   font-family: 'Poppins', sans-serif;
   color: #4C4E61;
+  box-sizing: border-box;
 }
 
 /* Style Header*/
@@ -21,9 +22,9 @@ header{
 }
 
 .text-banner{ 
-  width: 25%;
+  width: 40%;
   line-height: 1.4em;
-  font-size: 1em;
+  font-size: 0.9em;
   margin: 20px 0;
   color: #999ba5;
 }
@@ -31,12 +32,13 @@ header{
 h1{
   font-weight: bold;
   color: #4C4E61;
+  font-size: 1.8em;
 }
 
 h2{
   font-weight: lighter;
-  margin-bottom: 5px;
-  font-size: 1.8em;
+  margin-bottom: 12px;
+  font-size: 1.7em;
   color: #999ba5;
 } /* End Style Header*/
 
@@ -48,8 +50,68 @@ h2{
    justify-content: space-between;
    height: 300px;
    width: 30%;
+   background-color: #fff;
+   margin: 15px;
+   padding: 40px 35px;
+   align-self: center;
+   border-radius: 10px;
+   box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+;
+  border-top: 6px solid #4C4E61;
+ }
+
+ h3{
+  margin-bottom: 15px;
+  font-size: 1.4em;
+  color: #4C4E61;
+  text-align: left;
+} 
+
+.text-card{
+  text-align: left;
+  color: #999ba5;
+  line-height: 1.8em;
+  font-size: 0.9em;
+}
+
+
+
+.image-container{
+   /*width: 10%;*/
+   align-self: flex-end;
  }
  /* End Style Card*/
 
   /* Style CardList*/
+.card-list-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
   /* End Style CardList*/
+
+  .stackCardsClass{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* responsive design*/
+  @media (max-width: 900px){
+     /* Style Card*/
+    .section-card{
+      width: 60%;
+    }
+
+    .card-list-container{
+      flex-direction: column;
+    }
+  }
+
+  

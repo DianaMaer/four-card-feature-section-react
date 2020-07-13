@@ -1,16 +1,19 @@
 import React, { Component } from 'react';
 
-class Card extends React.Component {
-    render(){
+const Card = (props)=>{
+    
         return (
         <section className="section-card">
-            <h3>{this.props.title}</h3>
-            <p className="text-card">{this.props.description}</p>
-            <img src = {this.props.imageUrl}/>
+            <div className="text-container">
+                <h3>{props.imageUrltitle}</h3>
+                <p className="text-card">{props.description}</p>
+            </div>
+            <div className="image-container">
+                <img className="image-card" src = {props.imageUrl}/>
+            </div>
         </section>
     )
     }
-}
 
 export default Card;
 
